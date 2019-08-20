@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Magnitude Automation Suite" parallel="tests" verbose="10" configfailurepolicy="skip">
+	<parameter name="baseUrl" value="https://eademo2.everyangle.com"/>
+  <test name="Magnitude Test">
+  		<parameter name="userName" value="Sunnyn"/>
+  		<parameter name="Password" value="EAd3m0pw!"/>
+  	<classes>
+      	<class name="com.magnitude.scripts.BaseClass"/>
+      	<class name="com.magnitude.scripts.Login"/>
+    </classes>
+  </test>
+</suite>
